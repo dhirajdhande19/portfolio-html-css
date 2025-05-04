@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--NAVBAR-->
+    <header>
+        <nav class="navbar">
+            <div class="name">
+                <!--Name-->
+                Dhiraj Dhande
+            </div>
+            
+            <div class="connections">
+                <!--connections-->
+                <a href="https://github.com" target="_blank" rel="noopener no-referrer">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                
+
+                <a href="https://linkedin.com" target="_blank" rel="noopener no-referrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>Linkedin</span>
+                </a>
+                
+
+                <a href="mailto:dhirajdhande2@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--SECTION 1: HERO-->
+        <section>
+            <div class="hero-section">
+                <div>
+                    <h1>Hi, It's Dhiraj👋</h1>
+                    <p class="text">
+                        Hi, I'm Dhiraj, a web developer with expertise in the MERN Stack. I specialize in building responsive, user-focused websites and applications that bring ideas to life through clean and efficient code.
+                    </p>
+                    <br>
+                    <div class="short-link">
+                        <a href="#skills_link" class="links">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Skills</span>
+                        </a>
+                        <a href="#projects_link" class="links">
+                            <i class="fa-solid fa-pen"></i>
+                            <span>Projects</span>
+                        </a>
+                        <a href="#contact_link" class="links">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </div>      
+                </div>
+
+                <div class="pfp">
+                    <img src="/src-images/cat1.jpg" alt="my profile picture">
+                </div>
+
+            </div>
+        </section>
+        <!--SECTION 2: SKILLS-->
+        <section id="skills_link">
+            <div class="skills">
+                <h1>Skills</h1>
+                <p class="text">Proficient in HTML, CSS, and JavaScript, creating responsive and intuitive designs for modern web applications.</p>
+                <div class="logo">
+                    <div class="skills-logo">
+                        <img src="/src-images/html-logo.webp" alt="html">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skills-logo">
+                        <img src="/src-images/css-logo.webp" alt="html">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skills-logo">
+                        <img src="/src-images/javascript-logo.webp" alt="html">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!--SECTION 3: PROJECTS-->
+        <section id="projects_link">
+            <div class="projects">
+
+                <h1>Mini-Projects</h1>
+
+                <div class="cards-box">
+
+                    <div class="card">
+                        <a href="#">
+                            <img src="/src-images/amazon.jpg" alt="Avatar">
+                            <h2>Amazon Clone</h2>
+                            <span></span>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#">
+                            <img src="/src-images/flipkart.jpg" alt="Avatar">
+                        <h2>Flipkart Clone</h2>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="#">
+                            <img src="/src-images/portfolio.png" alt="Avatar">
+                        <h2>Portfolio</h2>
+                        </a>
+                    </div>
+
+                </div>  
+            </div>
+        </section>
+        <!--SECTION 4: CONTACT-->
+        <section id="contact_link" class="contact">
+            <h1>Contact me! </h1>
+
+            <div class="breif-intro">
+                <div>
+                    <h3>About Me</h3>
+                    <br>
+                    <p class="text">I am a third-year BSc Computer Science student with a passion for web development. Over the past year, I have honed my skills in HTML, CSS, and JavaScript, and I am excited to build interactive and responsive web applications. I am currently expanding my knowledge in the MERN stack and working on several projects to strengthen my skills. Additionally, I am interested in learning machine learning and integrating it into my web development journey. I am eager to continue learning and applying my skills to create impactful solutions.</p>
+                </div>
+                
+            
+
+                <form>
+                    <label for="name">Name</label>
+                    <input size="50" type="text" id="name" placeholder="Enter Your Name">
+
+                    <label for="email">Email</label>
+                    <input size="50" type="email" id="email" placeholder="Enter Your Email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="55" rows="10" placeholder="Enter Message"></textarea>
+
+                    <button  id="btn" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <section>
+            <div class="foot">
+                <h2>
+                    Let's Connect on
+                </h2>
+                <div class="social">
+                    <a href="https://www.instagram.com/dhirajdhande.19/profilecard/?igsh=OTFjbTZ5NThwdW4y"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/u4J6ktVpy29HZnEL/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/DhirajDhande8?t=GWkr-KBzM_SpSZiVlPMXuA&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

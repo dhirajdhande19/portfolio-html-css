@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #457B9D;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.navbar div {
+    margin: 40px;
+}
+
+.navbar .connections i {
+    padding: 5px;
+} 
+
+.navbar .connections a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    border: 2px solid #1D3557;
+    background-color: #1D3557;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.navbar .connections a:hover {
+    border: 2px solid #000814;
+    background-color: #000814;
+    transition: all;
+}
+
+/* SECTION 1: HERO */
+
+.hero-section {
+    padding: 50px 60px 20px 60px;
+    margin: 50px 40px 10px 40px;
+    display: flex;  
+}
+.hero-section h1{
+    margin-top: 50px;
+    font-size: 45px;
+
+}
+
+.hero-section p{
+    text-align: justify;
+
+}
+
+.hero-section .pfp img {
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ .pfp img:hover {
+        transform: scale(1.1);
+        transition: .3s;
+   
+}
+
+.short-link .links {
+    padding: 5px;
+    display: inline-block;
+    border: 2px solid #457B9D;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #457B9D;
+    margin: 5px;
+}
+
+.short-link .links i {
+    padding: 5px;
+}
+
+.short-link .links:hover {
+    color: white;
+    background-color: #457B9D;
+    border: 2px solid #457B9D;
+    transition: o ease-in 0.2s;
+}
+
+    /* SECTION 2: SKILLS */
+.skills {
+    text-align: center;
+    padding: 50px 60px 20px 60px;
+    margin: 50px 40px 10px 40px;
+}
+
+.skills h1 {
+    font-size: 35px;
+    padding: 100px 0 50px 0;
+}
+
+.skills .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.skills .skills-logo {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:  10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.skills .skills-logo:hover {
+    background-color: #457B9D;
+    color: white;
+    border: 1.5px solid white;
+    transition: all;
+}
+.skills .skills-logo img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+
+}
+/* SECTION 3: PROJECTS */
+.projects h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    padding: 100px 0 50px 0;
+}
+
+.cards-box {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    width: 300px;
+}
+
+.card img {
+    object-fit: cover;
+    width: 90%;
+    height: 150px;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+/* SECTION 4: CONTACT */
+.contact {
+   margin: 50px 0 100px 0;
+   padding: 100px ;
+}
+.contact h1 {
+    text-align: center;
+ }
+
+ .contact .breif-intro {
+    display: flex;
+    justify-content: center;
+ }
+ .contact .breif-intro div{
+    margin-top: 100px;
+    padding: 0 50px 100px 50px;
+ }
+
+ .contact form #name, #email, #message{
+    border: 2px solid #1D3557;
+    border-radius: 5px;
+    
+ }
+
+ .contact form #btn {
+    background-color: #1D3557;
+    border: 2px solid #1D3557;
+    color: white;
+    height: 40px;
+    width: 370px;
+    border-radius: 5px;
+ }
+ .contact form input{
+    height: 35px;
+    padding-left: 10px;
+ }
+ .contact form #btn:hover {
+    background-color: #457B9D;
+    border: 2px solid #457B9D;
+ }
+
+ #message{
+    padding-left: 10px;
+ }
+/* FOOTER */
+.foot {
+    height: 100px;
+    background-color: #457B9D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social {
+    margin: 50px;
+    text-decoration: none;
+
+}
+.social i {
+    opacity: 0.5;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+}
+.social i:hover {
+    opacity: 1;
+    font-size: 33px;
+}
+
+/* For Mobile-Screen */
+@media (max-width: 594px) {
+    /* NAVBAR */
+    .navbar .connections span {
+        display: none;
+    }
+    .navbar .connections i {
+        display: wrap;
+    }
+    .navbar .connections a {
+        margin: 2px;
+        padding: 1px;
+    }
+    /* SECTION 1: HERO */
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-section h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .hero-section p{
+        text-align: center;
+    }
+    .hero-section .pfp img:hover {
+        height: 250px;
+    }
+    
+    /* SECTION 2: SKILLS */
+    .skills p {
+        text-align: center;
+    }
+    .skills .logo {
+    flex-wrap: wrap;
+    }
+    /* SECTION 3: PROJECTS */
+    .cards-box {
+        flex-direction: column;
+    }
+    .card {
+        margin: 10px;
+    }
+    /* SECTION 4: CONTACT */
+    .contact {
+        margin: 00;
+        padding: 0;
+     }
+     .contact form{
+        margin: 0px 0 50px 0;
+        padding: 100px ;
+     }
+     .contact form input{
+        height: 25px;
+     }
+     .contact h1{
+        margin: 50px 0 0px 0;
+
+     }
+    .contact .breif-intro {
+        display: flex;
+        flex-wrap: wrap;
+     }
+     .contact .breif-intro .text{
+        text-align: center;
+     }
+     /* FOOTER */
+     .foot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;     
+    }
+    .social {
+        margin: 10px;
+    }
+    .social i {
+        opacity: 1;
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        font-size: 25px;
+    }
+    
+}
+
+/* For Tab-Screen */
+@media (min-width: 594px) and (max-width: 1024px) {
+
+    /* SECTION 1: HERO */
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-section h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .hero-section p{
+        text-align: center;
+    }
+    .hero-section .pfp img:hover {
+        height: 250px;
+    }
+
+    /* SECTION 3: PROJECTS */
+    .cards-box {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .card {
+        margin: 10px;
+    }
+
+    /* SECTION 4: CONTACT */
+    .contact {
+        margin: 00;
+        padding: 0 0 10px 0;
+     }
+    .contact form{
+        margin: 120px 10px 0px 0;
+
+     }
+     
+}
